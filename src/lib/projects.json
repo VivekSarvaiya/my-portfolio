@@ -1,0 +1,37 @@
+[
+    {
+        "title": "ERP System",
+        "description": "This project is a streamlined interface for an ERP (Enterprise Resource Planning) system. Its purpose is to efficiently manage fundamental business operations for small and medium-sized businesses. The interface encompasses features like Dashboard, Product Management, Order Management and a calendar view for business activities.",
+        "type": "Inter college competetion project",
+        "imageUrl": "/assets/img/erp.png",
+        "githubUrl": "https://github.com/VivekSarvaiya/erp-systems",
+        "demoUrl": "https://erp-flex.netlify.app/dashboard",
+        "skills": [
+            "ReactJS",
+            "NodeJS",
+            "MongoDB",
+            "React-Redux",
+            "Tailwind",
+            "AntD",
+            "Vite",
+            "Apexcharts"
+        ]
+    },
+    {
+        "title": "MakeMyCity",
+        "description": "This project is an admin panel for the mobile application built by our team. Its purpose is to manage operations for municipal corporations, such as complaint registration, issue tracking, and reporting. The admin panel serves as a centralized platform for administrators to oversee and streamline various municipal functions, ensuring effective and responsive governance.",
+        "type": "Final year project",
+        "imageUrl": "/assets/img/admin.png",
+        "githubUrl": "https://github.com/VivekSarvaiya/react-admin",
+        "demoUrl": "",
+        "skills": [
+            "ReactJS",
+            "Google Maps",
+            "Material UI",
+            "React-Redux",
+            "Tailwind",
+            "AntD",
+            "Context API"
+        ]
+    }
+]

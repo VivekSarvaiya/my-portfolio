@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Lead Full Stack Developer",
+        "company": "Pixerfect LLP",
+        "date": "May 2024 - Present",
+        "description": "As a Full Stack Developer, I excel in planning, designing, developing, testing, and maintaining large-scale web applications from the ground up using modern frameworks such as React.js and Node.js. My expertise includes robust version control with Git and GitHub to ensure smooth and effective team collaboration. I am adept at implementing new features and modifications based on stakeholder requirements, and I prioritize comprehensive testing to maintain exceptional code quality.",
+        "skills": [
+            "NextJS",
+            "TypeScript",
+            "ReactJS",
+            "Javascript",
+            "NodeJS",
+            "MongoDB",
+            "REST API",
+            "Tailwind CSS",
+            "Full Stack Development",
+            "Agile Development",
+            "JQuery"
+        ]
+    },
+    {
+        "title": "Mern Stack Developer",
+        "company": "DayDreamSoft",
+        "date": "Jan 2023 - May 2024 · 1 yr 4 mos",
+        "description": "Developed and maintained a customer relationship management (CRM) system for small businesses, leveraging the MERN stack to provide a seamless user experience and efficient data management. Built reusable components and front-end libraries for future use, reducing development time for new projects by 15%. Integrated third-party services and APIs, including payment gateways and social media logins, expanding application functionality.",
+        "skills": [
+            "ReactJS",
+            "NodeJS",
+            "MongoDB",
+            "ExpressJS",
+            "NextJS",
+            "Firebase",
+            "Javascript",
+            "REST API",
+            "Tailwind CSS",
+            "Agile Development",
+            "Database Management"
+        ]
+    },
+    {
+        "title": "Software Developer Intern",
+        "company": "DayDreamSoft LLP",
+        "date": "July 2022 - January 2023 · 6 mos",
+        "description": "Designed and developed a software that streamlines inventory management process for internal employees. Collaborated with other engineers on existing internal systems to implement feature enhancements and modifications.",
+        "skills": [
+            "Javascript",
+            "HTML & CSS",
+            "ReactJS",
+            "MongoDB",
+            "Firebase",
+            "Redux",
+            "Tailwind CSS",
+            "Database Management"
+        ]
+    }
+]
