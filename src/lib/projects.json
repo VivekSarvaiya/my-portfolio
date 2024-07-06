@@ -18,20 +18,19 @@
         ]
     },
     {
-        "title": "MakeMyCity",
-        "description": "This project is an admin panel for the mobile application built by our team. Its purpose is to manage operations for municipal corporations, such as complaint registration, issue tracking, and reporting. The admin panel serves as a centralized platform for administrators to oversee and streamline various municipal functions, ensuring effective and responsive governance.",
-        "type": "Final year project",
-        "imageUrl": "/assets/img/admin.png",
-        "githubUrl": "https://github.com/VivekSarvaiya/react-admin",
-        "demoUrl": "",
+        "title": "Moviebase",
+        "description": "Moviebase stands as a premier web application for movie and web show enthusiasts, combining cutting-edge technology with a user-centric design to deliver an unparalleled entertainment exploration experience. Moviebase offers users an immersive experience with seamless data fetching in real-time from The Movie Database (TMDB) API.",
+        "type": "Movies website",
+        "imageUrl": "/assets/img/moviebase.png",
+        "githubUrl": "https://github.com/VivekSarvaiya/moviebase",
+        "demoUrl": "https://moviebase7.netlify.app/",
         "skills": [
             "ReactJS",
-            "Google Maps",
+            "Scss",
             "Material UI",
             "React-Redux",
-            "Tailwind",
-            "AntD",
-            "Context API"
+            "TMDB'S API",
+            "Custom Hooks"
         ]
     }
 ]

@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <section id="projects" className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16">
             <h2 className="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-4xl">
-                Projects Done
+                Some of my works
             </h2>
             <div className="flex flex-row flex-wrap gap-x-4 justify-evenly">
                 {projects.map((projects, index) => (
