@@ -15,6 +15,8 @@ export function NavigationBar() {
         element?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
 
+    const menuList: string[] = ["about", "experiences", "projects", "skills", "contact"]
+
     return (
         <>
             <NavigationMenu className="hidden sm:flex sm:sticky sm:top-0 min-w-full bg-black bg-opacity-20 backdrop-blur-sm container py-4 justify-between border-b border-border/40">
@@ -23,80 +25,41 @@ export function NavigationBar() {
                     <AvatarFallback>VS</AvatarFallback>
                 </Avatar>
                 <NavigationMenuList className="w-full justify-end">
-                    <NavigationMenuItem className="cursor-pointer">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("about")}>
-                            About
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem className="cursor-pointer">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("experiences")}>
-                            Experiences
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem className="cursor-pointer">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("projects")}>
-                            Projects
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem className="cursor-pointer">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("feedbacks")}>
-                            Testimonials
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem className="cursor-pointer">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("skills")}>
-                            Skills
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem className="cursor-pointer">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("contact")}>
-                            Contact
-                        </NavigationMenuLink>
-                    </NavigationMenuItem>
+                    {
+                        menuList.map(item => (
+                            <NavigationMenuItem className="cursor-pointer capitalize" key={item}>
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash(item)}>
+                                    {item}
+                                </NavigationMenuLink>
+                            </NavigationMenuItem>
+                        ))
+                    }
                 </NavigationMenuList>
             </NavigationMenu>
             <Sheet>
-                <SheetTrigger className="sm:hidden sticky top-0 bg-black bg-opacity-20 backdrop-blur-lg container py-2 justify-end flex z-10">
-                    <Menu />
-                </SheetTrigger>
-                <SheetContent className="w-1/3">
+                <div className="sm:hidden sticky top-0 bg-black bg-opacity-20 backdrop-blur-lg container py-2 justify-between flex z-10">
+                    <Avatar className="cursor-pointer" onClick={() => scrolltoHash("hero")}>
+                        <AvatarImage src="/assets/img/logo.png" alt="@VivekSarvaiya" />
+                        <AvatarFallback>VS</AvatarFallback>
+                    </Avatar>
+                    <SheetTrigger>
+                        <Menu />
+                    </SheetTrigger>
+                </div>
+                <SheetContent className="w-full flex items-center justify-center">
                     <NavigationMenu className="flex flex-col w-full">
                         <NavigationMenuList className="w-full justify-end flex-col pt-4">
-                            <NavigationMenuItem>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("hero")}>
-                                    Home
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("about")}>
-                                    About
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("experiences")}>
-                                    Experiences
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("projects")}>
-                                    Projects
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("feedbacks")}>
-                                    Testimonials
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("skills")}>
-                                    Skills
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash("contact")}>
-                                    Contact
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
+                            {
+                                menuList.map(item => (
+                                    <SheetTrigger key={item}>
+                                        <NavigationMenuItem className='capitalize'>
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle()} onClick={() => scrolltoHash(item)}>
+                                                {item}
+                                            </NavigationMenuLink>
+                                        </NavigationMenuItem>
+                                    </SheetTrigger>
+                                ))
+                            }
                         </NavigationMenuList>
                     </NavigationMenu>
                 </SheetContent>
